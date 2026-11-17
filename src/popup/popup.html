@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>draftkeep</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>draftkeep</h1>
+      <p class="subtitle">Text rescued from closed or reloaded tabs.</p>
+    </header>
+
+    <main id="list" aria-live="polite"></main>
+    <p id="empty" class="empty" hidden>
+      No drafts yet. Type in a form and the text is saved as you type.
+    </p>
+
+    <footer>
+      <button id="clear" type="button" class="secondary">Delete all</button>
+      <span id="status" class="status" role="status"></span>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

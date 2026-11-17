@@ -1,0 +1,37 @@
+✔ draftKey keeps origin and path, drops query and fragment (2.1571ms)
+✔ draftKey rejects non-http and malformed urls (0.3584ms)
+✔ isSensitiveField blocks passwords, payment fields and named secrets (0.7395ms)
+✔ fieldKey prefers name and falls back to id (0.2965ms)
+✔ sanitizeValue trims trailing whitespace and rejects blank values (0.4099ms)
+✔ sanitizeFields drops sensitive, empty and unnamed fields (1.573ms)
+✔ sanitizeFields keeps the last value for duplicate keys and caps the count (0.7725ms)
+✔ mergeFields keeps old values for absent fields and replaces touched ones (0.4199ms)
+✔ mergeFields does not erase a field when the incoming value is empty (0.2746ms)
+✔ buildDraft returns null when there is nothing to keep (0.5851ms)
+✔ buildDraft stores page metadata and sanitized fields (0.4022ms)
+✔ isValidDraft rejects malformed stored values (0.3101ms)
+✔ pruneDrafts drops expired and malformed drafts (0.4301ms)
+✔ pruneDrafts keeps the newest drafts up to the cap (1.5309ms)
+✔ restorePlan fills only empty fields matched by name (0.4081ms)
+✔ restorePlan matches by id and plans each key once (0.2575ms)
+✔ restorePlan ignores malformed drafts (0.1853ms)
+✔ formatAge describes recent timestamps (0.3284ms)
+✔ listDrafts sorts newest first and does not expose values (0.5814ms)
+✔ summarizeDraft includes age and field count (0.2446ms)
+✔ manifest is Manifest V3 with a module service worker (1.8417ms)
+✔ every referenced manifest file exists (2.5693ms)
+✔ permissions stay minimal (0.994ms)
+✔ content script only runs on http and https pages (0.1813ms)
+✔ version matches package.json (0.4549ms)
+✔ service worker imports the shared core and handles every message (0.4642ms)
+✔ content script talks to the worker and never touches storage (0.4467ms)
+✔ popup has no inline script and uses its module file (0.7389ms)
+✔ no remote code or eval in extension sources (1.8899ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 176.1148

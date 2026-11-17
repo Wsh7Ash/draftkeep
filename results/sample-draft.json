@@ -1,0 +1,32 @@
+{
+  "key": "https://shop.example/checkout",
+  "url": "https://shop.example/checkout?step=2",
+  "origin": "https://shop.example",
+  "host": "shop.example",
+  "path": "/checkout",
+  "title": "Checkout — shop.example",
+  "updatedAt": 1750000000000,
+  "fields": [
+    {
+      "key": "email",
+      "name": "email",
+      "id": "",
+      "type": "email",
+      "value": "person@example.com"
+    },
+    {
+      "key": "address_line1",
+      "name": "address_line1",
+      "id": "",
+      "type": "text",
+      "value": "12 Market Street"
+    },
+    {
+      "key": "delivery_notes",
+      "name": "delivery_notes",
+      "id": "",
+      "type": "textarea",
+      "value": "Leave with the neighbour"
+    }
+  ]
+}

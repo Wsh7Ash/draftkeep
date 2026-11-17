@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light dark;
+  --text: #1f2328;
+  --muted: #5c6670;
+  --line: #d8dee4;
+  --surface: #ffffff;
+  --accent: #2f6f4e;
+  --danger: #a4243b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6edf3;
+    --muted: #9aa7b4;
+    --line: #30363d;
+    --surface: #161b22;
+    --accent: #5fbf8a;
+    --danger: #ff8188;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 12px 14px 10px;
+  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--surface);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+.subtitle {
+  margin: 2px 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.empty {
+  color: var(--muted);
+  margin: 14px 0;
+}
+
+.draft {
+  border-top: 1px solid var(--line);
+  padding: 9px 0;
+}
+
+.draft:first-child {
+  border-top: none;
+}
+
+.draft-title {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.draft-meta {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 1px;
+  overflow-wrap: anywhere;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 7px;
+}
+
+button {
+  font: inherit;
+  padding: 4px 9px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+button.primary {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+button.danger {
+  color: var(--danger);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid var(--line);
+  margin-top: 10px;
+  padding-top: 8px;
+}
+
+.secondary {
+  color: var(--muted);
+}
+
+.status {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}

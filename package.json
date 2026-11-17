@@ -1,0 +1,11 @@
+{
+  "name": "draftkeep",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Manifest V3 extension that rescues typed form content when a tab is lost",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}

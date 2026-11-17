@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>draftkeep test form</title>
+    <style>
+      body { font: 15px/1.5 system-ui, sans-serif; max-width: 34rem; margin: 3rem auto; padding: 0 1rem; }
+      label { display: block; margin-top: 1rem; font-weight: 600; }
+      input, textarea { width: 100%; padding: 0.5rem; font: inherit; }
+      .hint { color: #555; font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <h1>draftkeep test form</h1>
+    <p class="hint">
+      Serve this file over http (for example <code>python -m http.server</code>),
+      type into the fields, then close the tab and reopen it. The extension
+      stores the text fields and ignores the payment and password fields.
+    </p>
+
+    <form>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" />
+
+      <label for="address">Delivery address</label>
+      <input id="address" name="address_line1" type="text" autocomplete="street-address" />
+
+      <label for="notes">Delivery notes</label>
+      <textarea id="notes" name="delivery_notes" rows="4"></textarea>
+
+      <label for="card">Card number (never stored)</label>
+      <input id="card" name="card_number" type="text" autocomplete="cc-number" />
+
+      <label for="password">Password (never stored)</label>
+      <input id="password" name="password" type="password" />
+
+      <label for="otp">One-time code (never stored)</label>
+      <input id="otp" name="otp_code" type="text" autocomplete="one-time-code" />
+    </form>
+  </body>
+</html>
